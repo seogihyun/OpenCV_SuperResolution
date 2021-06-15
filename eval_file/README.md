@@ -1,1 +1,1 @@
-Testing file images directorys
+Testing file images directory
