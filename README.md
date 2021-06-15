@@ -12,17 +12,17 @@
 
 ```bash
 python prepare.py --images_dir "./train_file" \
-                --h5_dir "h5_file/train/train_x2.h5" \
-                --scale 2
+                  --h5_dir "h5_file/train/train_x2.h5" \
+                  --scale 2
 ```
 
 - eval_x2.h5
 
 ```bash
 python prepare.py --images-dir "./eval_file" \
-                --h5_dir "./h5_dir/eval/eval_x2.h5" \
-                --scale 2 \
-                --eval
+                  --h5_dir "./h5_dir/eval/eval_x2.h5" \
+                  --scale 2 \
+                  --eval
 ```
 
 ## Train
