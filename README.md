@@ -39,8 +39,8 @@ python train.py --train_file "./h5_dir/train/train_x2.h5" \
 
 ```bash
 python save_video.py --weights_file "./weights/x2/best.pth" \
-               --video_file "./video_file/video.mp4" \
-               --model_name "FSRCNN-x" \
-               --scale 2
+                     --video_file "./video_file/video.mp4" \
+                     --model_name "FSRCNN-x" \
+                     --scale 2
 ```
 
