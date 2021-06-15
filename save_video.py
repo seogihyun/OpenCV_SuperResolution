@@ -59,7 +59,6 @@ def writeVideo(args):
 
 
         if ret:
- 
 
             hr = cv2.resize(frame, (width, height), interpolation=cv2.INTER_CUBIC)
             lr = cv2.resize(hr, (width // args.scale, height // args.scale), interpolation=cv2.INTER_CUBIC)
@@ -124,18 +123,13 @@ def writeVideo(args):
 
             if cv2.waitKey(0) & 0xFF == ord('q'):
                 break
-
         else:
             break
-
-    """ PSNR, SSIM, LPIPS 평균 """
-    
-    end = time.time()
-    print('time elapsed : {:.2f}'.format(end - start))
-
-    print('PSNR: {:.2f}'.format(psnr_avg))
-    print('SSIM: {:.2f}'.format(ssim_avg))
-    print('LPIPS: {:.2f}'.format(lpips_avg))
+    if args.calc_check:
+        """ PSNR, SSIM, LPIPS 평균 """
+        print('PSNR: {:.2f}'.format(psnr_avg))
+        print('SSIM: {:.2f}'.format(ssim_avg))
+        print('LPIPS: {:.2f}'.format(lpips_avg))
 
     cap.release()
     out.release()
@@ -151,4 +145,4 @@ if __name__ == '__main__':
     parser.add_argument('--calc_check', action='store_true')
     args = parser.parse_args()
     writeVideo(args)
-    
+
