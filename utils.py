@@ -129,3 +129,19 @@ def LPIPS(hr, preds, lpips_metric):
     """ LPIPS 측정 함수 """   
     lpips_value = lpips_metric(hr, preds)
     return lpips_value.cpu().detach().numpy()[0][0][0][0]
+
+
+def calc_avg(hr, preds, lpips_metric):
+    """ PSNR, SSIM, LPIPS 계산 """
+    psnr, ssim, lpips, count = 0, 0, 0, 0
+
+    count += 1
+
+    # PSNR
+    psnr += calc_psnr(hr, preds)
+    # SSIM
+    ssim += calc_ssim(hr, preds)
+    # LPIPS (Learned Perceptual Image Patch Similarity)
+    lpips += LPIPS(hr.cpu(), preds.cpu(), lpips_metric)
+
+    return psnr/count, ssim/count, lpips/count
