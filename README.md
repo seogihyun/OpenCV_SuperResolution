@@ -41,7 +41,7 @@ python prepare.py --images-dir "./eval_file" \
 ```bash
 python train.py --train_file "./h5_file/train/train_x2.h5" \
                 --eval-file "./h5_file/eval/eval_x2.h5" \
-                --outputs_dir "./output_dir" \
+                --weights_dir "./weights_dir" \
                 --scale 3               
 ```
 
