@@ -1,1 +1,1 @@
-Training file images directorys
+Training file images directory
