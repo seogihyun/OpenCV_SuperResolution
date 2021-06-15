@@ -44,3 +44,13 @@ python save_video.py --weights_file "./weights/x2/best.pth" \
                      --scale 2
 ```
 
+
+## Video with psnr, ssim, lipis average check
+
+```bash
+python save_video.py --weights_file "./weights/x2/best.pth" \
+                     --video_file "./video_file/video.mp4" \
+                     --model_name "FSRCNN-x" \
+                     --scale 2
+                     --calc_check
+```
