@@ -55,3 +55,10 @@ python save_video.py --weights_file "./weights/x2/best.pth" \
                      --scale 2
                      --calc_check
 ```
+
+## Result
+
+![opencv_fsrcnn-x](https://user-images.githubusercontent.com/72849922/122024431-62a2eb00-ce03-11eb-9c3b-86006760cc3b.gif)
+
+
+
