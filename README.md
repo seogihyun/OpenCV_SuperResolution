@@ -1,7 +1,8 @@
+
 # Video capture and writer using OpenCV with FSRCNN-x
 
 
-<center><img src="https://user-images.githubusercontent.com/72849922/122015905-7d716180-cdfb-11eb-9728-a96dda1f35d7.PNG"></center>
+<center><img src="https://user-images.githubusercontent.com/72849922/122023411-79950d80-ce02-11eb-88b7-9b34aa37b311.PNG"></center>
 
 -----
 
