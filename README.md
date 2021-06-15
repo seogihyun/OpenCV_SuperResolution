@@ -30,7 +30,7 @@ python prepare.py --images_dir "./train_file" \
 
 ```bash
 python prepare.py --images-dir "./eval_file" \
-                --output-path "./h5_file/eval/eval_x2.h5" \
+                --h5_dir "./h5_dir/eval/eval_x2.h5" \
                 --scale 2 \
                 --eval
 ```
@@ -39,24 +39,17 @@ python prepare.py --images-dir "./eval_file" \
 
 
 ```bash
-python train.py --train_file "./h5_file/train/train_x2.h5" \
-                --eval-file "./h5_file/eval/eval_x2.h5" \
+python train.py --train_file "./h5_dir/train/train_x2.h5" \
+                --eval_file "./h5_dir/eval/eval_x2.h5" \
                 --weights_dir "./weights_dir" \
                 --scale 3               
 ```
 
-## Test
-
-source 제공자의 pre-trained model을 다운로드 받고 싶으신 분들은 참고!
-
-| Model | Scale | Link |
-|-------|-------|------|
-| ESPCN (91) | 3 | [Download](https://www.dropbox.com/s/2fl5jz5nw9oiw1f/espcn_x3.pth?dl=0) |
-
+## Video
 
 ```bash
-python test.py --weights-file "./output_dir/x3/best.pth" \
-               --image-file "./data/butterfly_GT.bmp" \
+python test.py --weights_file "./weights/x2/best.pth" \
+               --image_file "./data/butterfly_GT.bmp" \
                --scale 3
 ```
 
