@@ -45,7 +45,7 @@ python save_video.py --weights_file "./weights/x2/best.pth" \
 ```
 
 
-## Video with psnr, ssim, lipis average check
+## Video with PSNR, SSIM, LPIPS average check
 
 ```bash
 python save_video.py --weights_file "./weights/x2/best.pth" \
