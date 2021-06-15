@@ -64,7 +64,7 @@ def eval(args):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--images_dir', type=str, required=True)
-    parser.add_argument('--output_path', type=str, required=True)
+    parser.add_argument('--h5_dir', type=str, required=True)
     parser.add_argument('--scale', type=int, default=2)
     parser.add_argument('--with_aug', action='store_true')
     parser.add_argument('--eval', action='store_true')
