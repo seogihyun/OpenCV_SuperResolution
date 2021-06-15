@@ -12,7 +12,7 @@
 
 ```bash
 python prepare.py --images_dir "./train_file" \
-                  --h5_dir "h5_file/train/train_x2.h5" \
+                  --h5_dir "./h5_dir/train/train_x2.h5" \
                   --scale 2
 ```
 
